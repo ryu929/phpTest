@@ -66,8 +66,28 @@ echo '<br>';
 
 //5.次のビルトイン関数の用途、使い方を自分で調べて実際に使ってみてください。
 $nogizaka = "<p>maiy<asa>ankawaii";
- echo $nogizaka;
- echo '<br>';
+
  echo strip_tags($nogizaka,"<pa>");
+
+ echo '<br>';
+
+ $members=array("一郎","二郎","三郎");
+ array_push($members,"四郎","五郎");
+ print_r($members);
+
+ echo '<br>';
+ $array1 = array("color" => "red", 2, 4);
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+$result = array_merge($array1, $array2);
+print_r($result);
+
+echo '<br>';
+
+$time = mktime(0, 0, 0, 1, 1, 2020);
+var_dump(date('Y年m月d日h時i分s秒', $time));
+print('<br/>');
+
+echo date("l");
+
 
 ?>
